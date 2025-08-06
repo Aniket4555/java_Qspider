@@ -1,0 +1,18 @@
+import java.uitl.Scanner;
+class  Factorial
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter the number:");
+		int num=new Scanner(System.in).nextInt();
+		Factorial(num);
+
+	}
+	public static void Factorial(int num){
+		int result=num;
+		for(int i=1;i<num;i++){
+			result *=(num-i);
+		}
+		System.out.println(result);
+	}
+}
